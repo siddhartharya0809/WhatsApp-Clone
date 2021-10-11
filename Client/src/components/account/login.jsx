@@ -68,9 +68,8 @@ const Login = ({ classes }) => {
 	const { account, setAccount } = useContext(AccountContext)
 
 	const onLoginSuccess = (res) => {
-		console.log('on login successfully', res.profileObj);
+		console.log("Logged in Successfully", res.profileObj);
 		setAccount(res.profileObj);
-
 	}
 	const onLoginFailure = () => {
 		console.log('on login unsuccessfully');

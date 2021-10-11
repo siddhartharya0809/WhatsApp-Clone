@@ -20,6 +20,12 @@ const useStyles = makeStyles({
 		backgroundColor: '#00bfa5',	// ths header color is not changing from blue to this color.
 		boxShadow: 'none',
 	},
+	header: {
+		height: '115px',
+		backgroundColor: '#00bfa5',	// ths header color is not changing from blue to this color.
+		boxShadow: 'none',
+	},
+
 })
 
 const Messenger = () => {
@@ -28,7 +34,7 @@ const Messenger = () => {
 	return (
 		<Box className={classes.component}>
 			<AppBar>
-				<Toolbar className={classes.loginHeader}>
+				<Toolbar className={account ? classes.header : classes.loginHeader}>
 				</Toolbar>
 			</AppBar>
 			{/* We have to check whether our account contains some value or not if not show login page 
